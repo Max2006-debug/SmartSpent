@@ -1,27 +1,27 @@
 # 💰 LPU Smart Wallet
 
-A modern financial management web app designed for students to track expenses, manage budgets, and gain insights into their spending habits.
+A modern financial management web app for students to track expenses, manage budgets, and gain insights into their spending habits.
 
 ---
 
 ## 🚀 Features
 
-* 🔐 Secure Login & Registration (LPU Reg No based)
+* 🔐 Login & Registration (LPU Reg No based)
 * 💸 Expense Tracking (category-wise)
-* 📊 Interactive Charts (Pie + Monthly Bar Graph)
-* 📅 Date Filter (track spending between dates)
-* 💰 Budget Management with alerts
-* 🤖 AI Spending Insights (smart suggestions)
-* 📄 Export Data to Excel (CSV)
-* 🌗 Light/Dark Theme Toggle
-* 🎨 Clean & Professional UI/UX
+* 📊 Charts (Pie + Monthly Bar)
+* 📅 Date Filter (track between dates)
+* 💰 Budget Alerts
+* 🤖 Smart Insights (AI-like suggestions)
+* 📄 Export to Excel (CSV)
+* 🌗 Light/Dark Theme
+* 🎨 Clean & Professional UI
 
 ---
 
 ## 🛠 Tech Stack
 
 * Backend: Python (Flask)
-* Frontend: HTML, CSS, JavaScript
+* Frontend: HTML, CSS, JS
 * Database: SQLite
 * Charts: Chart.js
 
@@ -29,41 +29,59 @@ A modern financial management web app designed for students to track expenses, m
 
 ## 📂 Project Structure
 
-money-manager/
+```
+SmartSpent/
 │
 ├── app.py
+├── requirements.txt
 ├── templates/
 ├── static/
+```
 
 ---
 
-## ▶️ How to Run
+## 📦 Requirements
 
-1. Install dependencies:
-   pip install flask
-
-2. Run app:
-   python app.py
-
-3. Open browser:
-   http://127.0.0.1:5000
+```
+flask
+gunicorn
+```
 
 ---
 
-## 🌐 Deployment
+## ▶️ Run Locally
 
-This project can be deployed using platforms like Render.
+```
+pip install -r requirements.txt
+python app.py
+```
+
+Open: http://127.0.0.1:5000
+
+---
+
+## 🌐 Deployment (Render)
+
+* Build Command:
+
+```
+pip install -r requirements.txt
+```
+
+* Start Command:
+
+```
+gunicorn app:app
+```
 
 ---
 
 ## 💡 Idea
 
-This app helps students manage daily expenses, avoid overspending, and build financial discipline using analytics and smart insights.
+Helps students manage expenses, avoid overspending, and build financial discipline using analytics.
 
 ---
 
 ## 🏆 Hackathon Ready
 
-Built as a complete solution with real-world usability and clean UI for presentation.
-
----
+Complete working product with real-world usability and clean UI.
